@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+logging:
+  level:
+    org.springframework : debug
+
+spring:
+  jpa:
+    show-sql: true
+  messages:
+    basename: messages
+  security:
+    user:
+      name: username
+      password: passw0rd
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
